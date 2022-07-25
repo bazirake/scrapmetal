@@ -1,0 +1,21 @@
+.about-1
+{
+    padding: 5px;
+    margin: 30px;
+}
+.about-1 h1{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+
+}
+.about-1 p{
+    text-align: center;
+    padding: 3px;
+}
+.about-item{
+   margin-bottom: 20px;
+   margin-top: 20px;
+   padding: 80px,30px;
+   box-shadow: 0 0 9px;
+}

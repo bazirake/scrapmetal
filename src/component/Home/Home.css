@@ -1,0 +1,127 @@
+.carousel-control-next-icon {
+    display: inline-block;
+    width: 4rem!important;
+    height: 2rem!important;
+     color: #0e1516!important;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+
+
+.carousel-control-next,.carousel-control-prev
+{
+    
+   position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    padding: 0;
+    text-align: center;
+    background-image: initial;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    border: 0;
+    border-radius: 5px!important;
+    opacity: .5;
+    transition: opacity .15s ease;
+   
+}
+
+.carousel-control-next:focus,.carousel-control-next:hover,.carousel-control-prev:hover,
+.carousel-control-prev:focus
+ {
+    outline: 4px #008296!important;
+    box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #008296;
+    
+}
+.carousel-inner,img
+{
+    height: 250px;
+}
+.btn-info
+{
+    background-color: #f60!important;
+    color: #fff!important;
+    margin-top: 10px!important;
+    padding: 9px 20px 7px !important;
+    border-radius: 19px;
+    font-size: 16px!important;
+    line-height:22px!important
+}
+.metal_header
+ {
+  color: #8b6a44;
+  padding: 14px 19px 2px;
+  letter-spacing: 0px;
+ }
+ .font-weight-bold
+ {
+     font-weight: bolder!important;
+     letter-spacing: 0px;
+ }
+
+ .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    background-color:transparent;
+}
+hr
+{
+ border-radius:3px!important;
+ border:3px solid #DCDEE3!important;
+ margin-top: 12px;
+}
+ 
+.list_container
+{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+
+}
+
+li .anc{
+ text-align: center;
+ text-decoration: none;
+color: #008296;
+padding-left: 10px;
+padding-right:20px ;
+ overflow: hidden;
+}
+.image_w
+{
+    width: 30px;
+   
+}
+.image_h
+{
+    height: 20px;
+}
+.carousel-caption h1
+{
+  color: #fff;
+  text-transform:capitalize;
+  letter-spacing:0px;
+  animation-name:carousel;
+  animation-duration: 4s;
+}
+
+@keyframes carousel{
+  from{color: red; font-size: 10px;}
+  to{color: yellow; font-size: 40px;}
+  }

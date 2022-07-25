@@ -1,0 +1,109 @@
+.form-control
+  {
+  outline:none;
+  -webkit-box-shadow:none!important;
+  box-shadow:none!important;
+  height: 40px!important;
+  background-color: white!important;
+  border: 1px solid rgb(198, 40, 40);
+  border-top-left-radius:20px ;
+  border-bottom-left-radius:20px;
+}
+
+
+.form-control:focus
+ {
+  -webkit-box-shadow: 0 3px 10px -2px rgba(0, 0,0, 0.2)!important;
+  box-shadow: 0 3px 10px -2px rgba(0, 0,0, 0.2)!important;
+ }
+ .form-control:focus,.form-control:active
+  {
+  -webkit-box-shadow: 0 3px 10px -2px rgba(0, 0,0, 0.2)!important;
+  box-shadow: 0 3px 10px -2px rgba(0, 0,0, 0.2)!important;
+  }
+  .btn
+  {
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0, 0,0, 0.2)!important;
+    box-shadow: 0 3px 10px -2px rgba(0, 0,0, 0.2)!important;   
+  }
+  .btn.btn-secondary
+  {
+   color:#fff;
+   border-width: 2px;
+   background-color: #bc5148;
+   border-color:#bc5148 ;
+   padding: 10px;
+   text-transform: capitalize;
+   font-size: 18px;
+   height: 40px;
+  }
+
+  .nav-bar
+   {
+    background-color: #8c6c44!important;
+
+   }
+   .nav-link
+    {
+       color: white!important;
+       text-transform: capitalize;
+       font-size: 17px;
+       font-style: normal;
+       padding-right:.5rem !important; 
+       padding-left:.5rem!important;
+       padding-top: .715rem!important;
+       padding-bottom:.715rem!important;
+    }
+    .nav-link:hover
+    {
+     background-color: #666;
+    }
+    .nav-link:active
+    {
+      background-color: rgb(227, 246, 18);
+      color: white!important;
+    }
+    .navbar
+    {
+      font-weight: 40px!important;
+    }
+    .navbar-toggler
+    {
+      color:#bc5148;
+      background-color: #fff;
+    }
+    .cart
+    {
+      font-size: 10px!important;
+    }
+    .badge
+    {
+     border-radius: 50%;
+     background: red;
+     color: white;
+     position: relative;
+     top: -13px;
+    }
+  .nav-header
+  {
+  background-color: #443017;
+  color: wheat;
+  }
+  .logos
+  {
+    font-size: 16px!important;
+    font-style: italic;
+    text-transform: capitalize;
+    margin-top: 70px!important;
+  }
+ .menu1
+ {
+   font-size: 14px;
+ }
+  .logoim
+  {
+   border-radius: 10px;
+   max-width: 100px;
+   max-height: 30px;
+   background-color: #443017;
+  }

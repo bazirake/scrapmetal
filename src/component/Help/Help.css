@@ -1,0 +1,41 @@
+.contact
+{
+    letter-spacing: 0px;
+    font-size: 20px;
+    font-weight: bold;
+   color: #8c6c44;
+   padding: 10px 0px 40px 0px;
+}
+.my-title
+{
+    color: #8c6c44;
+    font-weight: bold;
+    font-size: 18px;
+}
+.form-controls
+{
+    outline:none;
+    -webkit-box-shadow:none!important;
+    box-shadow:none!important;
+   
+    background-color: white!important;
+    border: 1px solid rgb(198, 40, 40);
+    border-radius:4px;
+    width: 100%;
+}
+.my-btn {
+    background-color: #8c6c44;
+    color: #fff;
+    border: 1px solid #8c6c44;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+ }
+
+.my-btn:hover
+{
+background-color: white;
+color: #8c6c44;
+border: 1px solid #8c6c44;
+}

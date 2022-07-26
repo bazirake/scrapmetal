@@ -173,7 +173,7 @@ const Home = () => {
   <div className='container'>
   <div className='row '>
   <div class="col-4 text-center"><h4 className='pl-5'><a href='' className='text-decoration-none metal_header '>CHOOSE YOUR SELLER PROVINCE</a></h4></div>
-  <div class="col"><hr/></div>
+  <div class="col"><hr className='hrs'/></div>
   </div>
   <div className='row'>
    <div className='col'>

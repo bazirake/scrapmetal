@@ -1,0 +1,92 @@
+.main{
+    padding-top: 0px;
+}
+
+.my-word
+{
+    color: #8c6c44;
+    letter-spacing: 0px;
+}
+.big-img{
+    border:1px solid #dcdcdc;
+    padding:10px;
+    border-radius:4px;
+    text-align:center;
+    box-shadow:0px 0px 10px 0px #eaeaea;
+    text-align:center;
+    margin-bottom:20px;
+}
+.my-btn{
+    background-color: #8c6c44;
+    color: #fff;
+    border: 1px solid #8c6c44;
+}
+
+.btn-infos{
+    color: #fff;
+    background-color: #269abc;
+    border-color: #1b6d85;
+    border: 1px solid #8c6c44;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+.btn-infos:hover{
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.mar-bot-0 {
+    margin-bottom: 0;
+}
+
+.pink {
+    color: #8c6c44;
+}
+.btn-link
+{
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: #1b6d85;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.btn-link:hover,.btn-link:visited{
+    background-color: white;
+    border: 1px solid cyan;
+    border-radius: 10px;
+    padding: 5px;
+}
+.btn-link:active{
+    background-color: rgb(84, 84, 190);
+}
+.feature {
+    border: 1px solid #ececec;
+    padding-left: 12px;
+    padding-top:10px;
+}
+.font-18{
+    font-size: 18px;
+}
+.ml-34{
+    margin-left: 34px;
+}
+.img-23
+{
+    height: 200px;
+}
+.breadcrumbs{
+    margin-bottom: 15px;
+      border: 1px solid #8c6b4400;
+      box-sizing: border-box;
+      box-shadow: 0px 3px 3px 0px #d0d0d0;
+      background-color: #8c6b44;
+      float: right;
+      height: 34px;
+      padding-top: 5px;
+      margin-top: -57px;
+      border-radius: 12px;
+      color: white;
+}

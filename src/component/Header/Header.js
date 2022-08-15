@@ -1,22 +1,21 @@
 import React from 'react'
 import 'bootstrap'
 import './Header.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee,faUserCheck,faUserPlus,faQuestion,faAddressCard ,
-faInfoCircle,faHome,faUserCircle,faCar, faCartPlus} from '@fortawesome/free-solid-svg-icons'
-import { Link} from "react-router-dom";
-import {Nav,Navbar,Container,NavDropdown,Form,Button,Row} from 'react-bootstrap';
-const Header = () => {
+import{FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import{faQuestion,faAddressCard,
+faInfoCircle,faHome,faCar,faPen, faCartPlus,faSignIn} from '@fortawesome/free-solid-svg-icons'
+import {Nav,Navbar,Container,NavDropdown,Form,Row} from 'react-bootstrap';
+const Header = () =>{
   return(
   <Container fluid>
   <Row className='nav-header '>
-  <div className='col d-flex justify-content-start'>
+  <div className='col d-flex  justify-content-start'>
   <Navbar.Brand href="#"><img className='logoim' src='./image/logo4.png' />
-  <span className='text-white logos'>Scrap metal recycling system</span></Navbar.Brand>
+  <span className='text-white '>Scrap metal recycling system</span></Navbar.Brand>
     </div>
     <div className='col d-flex justify-content-end'>
-     <Nav.Link className='menu1' href="/seller"><span><FontAwesomeIcon icon={faUserPlus} /></span>Seller login</Nav.Link>
-     <Nav.Link className='menu1' href="/buyer"><span><FontAwesomeIcon icon={faUserPlus} /></span>Buyer login</Nav.Link>
+     <Nav.Link className='menu1' href="/login"><span><FontAwesomeIcon icon={faSignIn} /></span>SignIn</Nav.Link>
+     <Nav.Link className='menu1' href="/register"><span><FontAwesomeIcon icon={faPen} /></span>Register</Nav.Link>
     </div>
   </Row>
   < Row>
@@ -29,17 +28,16 @@ const Header = () => {
           style={{ maxHeight: '100px' }}
           navbarScroll
           >
-          <Nav.Link href="/"><span><FontAwesomeIcon icon={faHome} /></span>Home</Nav.Link>
-            <Nav.Link href="/about"><span><FontAwesomeIcon icon={faInfoCircle} /></span>About</Nav.Link>
-            <Nav.Link href="/contact">
-            <span><FontAwesomeIcon icon={faAddressCard} /></span>Contact</Nav.Link>
-            <Nav.Link href="/help">Help<span><FontAwesomeIcon icon={faQuestion} /></span></Nav.Link>
-             <NavDropdown title="Categories" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#buyer">Iron Metal</NavDropdown.Item>
-              <NavDropdown.Item href="#buyer">Silver Metal</NavDropdown.Item>
-              <NavDropdown.Item href="#buyer">Zinc Metal</NavDropdown.Item>
-              <NavDropdown.Item href="#buyer">Gold Metal</NavDropdown.Item>
-              <NavDropdown.Divider />
+         <Nav.Link href="/"><span><FontAwesomeIcon icon={faHome} /></span>Home</Nav.Link>
+         <Nav.Link href="/about"><span><FontAwesomeIcon icon={faInfoCircle} /></span>About</Nav.Link>
+         <Nav.Link href="/help">
+          <span><FontAwesomeIcon icon={faAddressCard}/></span>Contact</Nav.Link>
+            <NavDropdown title="Categories" id="navbarScrollingDropdown">
+             <NavDropdown.Item href="#buyer">Iron Metal</NavDropdown.Item>
+             <NavDropdown.Item href="#buyer">Silver Metal</NavDropdown.Item>
+             <NavDropdown.Item href="#buyer">Zinc Metal</NavDropdown.Item>
+             <NavDropdown.Item href="#buyer">Gold Metal</NavDropdown.Item>
+             <NavDropdown.Divider/>
             </NavDropdown>
              <NavDropdown title="Services" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#buyer">Delivery info</NavDropdown.Item>
@@ -54,9 +52,10 @@ const Header = () => {
               </NavDropdown.Item>
               <NavDropdown.Divider/>
             </NavDropdown> 
-            <Nav.Link href="/seller"><span><FontAwesomeIcon icon={faUserPlus} /></span>Seller</Nav.Link>
-            <Nav.Link href="/buyer"><span><FontAwesomeIcon icon={faUserPlus} /></span>Buyer</Nav.Link>
-            <Nav.Link href="/buyer"><span><FontAwesomeIcon icon={faCar} /></span>Orders</Nav.Link>
+              <Nav.Link href="/help">Help<span><FontAwesomeIcon icon={faQuestion} /></span></Nav.Link>
+            <Nav.Link href="/login"><span><FontAwesomeIcon icon={faSignIn} /></span>SignIn</Nav.Link>
+            <Nav.Link href="/register"><span><FontAwesomeIcon icon={faPen} /></span>Register</Nav.Link>
+            <Nav.Link href="/order"><span><FontAwesomeIcon icon={faCar}/></span>Orders</Nav.Link>
             <Nav.Link href="/buyer"><span><FontAwesomeIcon icon={faCartPlus}/>
             <span className='badge'>0</span></span>
            </Nav.Link>
@@ -74,11 +73,7 @@ const Header = () => {
     </Navbar.Collapse>
   </Navbar>
   </Row>
-  
-      </Container>
-    
-    
-    )
+  </Container>
+)
 }
-
 export default Header

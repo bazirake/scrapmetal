@@ -1,11 +1,14 @@
 import React from 'react'
 import './Home.css';
+import { setTile } from '../Utilities/Titles';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import { Container } from 'react-bootstrap';
-const Home = () => {
-  return(
-    <div>
+const Home =()=>{
+setTile("ScrapMetalSystem | Home")
+return(
+ <div>
 <section>
 <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -21,16 +24,16 @@ const Home = () => {
       <h1 >First scrap metal type</h1>
       </div>
       </a>
-    </div>
+   </div>
     <div class="carousel-item">
-      <a href=''>
-      <img src='./image/im6.jpg' class="d-block w-100" alt="..."/>
-      <div class="carousel-caption d-none d-md-block">
-        <h1>Second scrap metal type</h1>
-      </div>
-      </a>
-
+     <a href=''>
+     <img src='./image/im6.jpg' class="d-block w-100" alt="..."/>
+     <div class="carousel-caption d-none d-md-block">
+      <h1>Second scrap metal type</h1>
+     </div>
+    </a>
     </div>
+
     <div class="carousel-item">
       <a href=''>
       <img src='./image/im3.jpg' class="d-block w-100 " alt="..."/>
@@ -40,9 +43,9 @@ const Home = () => {
       </a>
     </div>
   </div>
+
   <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
@@ -60,7 +63,7 @@ const Home = () => {
    </div>
    <div class='row g-3 my-1'>
   <div className='col-12 col-md-6 col-lg-3'>
-    <a href=''  className='card box-shadow text-decoration-none  rounded-3'>
+    <a href='/metal'  className='card box-shadow text-decoration-none  rounded-3'>
     <div className='card-body'>
      <h5 className='card-tile text-center'>picture1</h5>
      <img src='./image/im1.jpg' class='card-img-top'/>
@@ -70,10 +73,23 @@ const Home = () => {
          </p>
       <span className='btn-info'>Shop now<FontAwesomeIcon icon={faArrowRight} /></span>
   </div>
+   </a>
+  </div>
+   <div className='col-12 col-md-6 col-lg-3'>
+    <a href='/metal'  className='card box-shadow text-decoration-none rounded-3'>
+    <div className='card-body'>
+     <h5 className='card-tile text-center'>picture1</h5>
+     <img src='./image/im1.jpg' class='card-img-top'/>
+    <p className='card-text d-flex flex-column'>
+      <span class='font-italic'>This is zinc metal and it is quality</span>
+       <span className='text-success'>10 piece(s)</span>
+    </p>
+    <span className='btn-info '>Shop now<FontAwesomeIcon icon={faArrowRight} /></span>
+  </div>
   </a>
    </div>
    <div className='col-12 col-md-6 col-lg-3'>
-    <a href='./image/im1.jpg'  className='card box-shadow text-decoration-none rounded-3'>
+    <a href='/metal'  className='card box-shadow text-decoration-none rounded-3'>
     <div className='card-body'>
      <h5 className='card-tile text-center'>picture1</h5>
      <img src='./image/im1.jpg' class='card-img-top'/>
@@ -86,7 +102,7 @@ const Home = () => {
   </a>
    </div>
    <div className='col-12 col-md-6 col-lg-3'>
-    <a href=''  className='card box-shadow text-decoration-none rounded-3'>
+    <a href='/metal'  className='card  bg-body rounded text-decoration-none rounded-3'>
     <div className='card-body'>
      <h5 className='card-tile text-center'>picture1</h5>
      <img src='./image/im1.jpg' class='card-img-top'/>
@@ -98,26 +114,11 @@ const Home = () => {
   </div>
   </a>
    </div>
-   <div className='col-12 col-md-6 col-lg-3'>
-    <a href=''  className='card  bg-body rounded text-decoration-none rounded-3'>
-    <div className='card-body'>
-     <h5 className='card-tile text-center'>picture1</h5>
-     <img src='./image/im1.jpg' class='card-img-top'/>
-      <p className='card-text d-flex flex-column'>
-        <span class='font-italic'>This is zinc metal and it is quality</span>
-        <span className='text-success'>10 piece(s)</span>
-         </p>
-      <span className='btn-info '>Shop now<FontAwesomeIcon icon={faArrowRight} /></span>
-  </div>
-  </a>
-   </div>
-
 </div>
-
 
 <div class='row g-3 my-1'>
   <div className='col-12 col-md-6 col-lg-3'>
-    <a href=''  className='card box-shadow text-decoration-none  rounded-3'>
+    <a href='/metal'  className='card box-shadow text-decoration-none  rounded-3'>
     <div className='card-body'>
      <h5 className='card-tile text-center'>picture1</h5>
      <img src='./image/im1.jpg' class='card-img-top'/>
@@ -130,7 +131,7 @@ const Home = () => {
   </a>
    </div>
    <div className='col-12 col-md-6 col-lg-3'>
-    <a href='./image/im1.jpg'  className='card box-shadow text-decoration-none rounded-3'>
+    <a href='/metal'  className='card box-shadow text-decoration-none rounded-3'>
     <div className='card-body'>
      <h5 className='card-tile text-center'>picture1</h5>
      <img src='./image/im1.jpg' class='card-img-top'/>
@@ -143,7 +144,7 @@ const Home = () => {
   </a>
    </div>
    <div className='col-12 col-md-6 col-lg-3'>
-    <a href=''  className='card box-shadow text-decoration-none rounded-3'>
+    <a href='/metal'  className='card box-shadow text-decoration-none rounded-3'>
     <div className='card-body'>
      <h5 className='card-tile text-center'>picture1</h5>
      <img src='./image/im1.jpg' class='card-img-top'/>
@@ -156,7 +157,7 @@ const Home = () => {
   </a>
    </div>
    <div className='col-12 col-md-6 col-lg-3'>
-    <a href=''  className='card box-shadow text-decoration-none rounded-3'>
+    <a href='/metal'  className='card box-shadow text-decoration-none rounded-3'>
     <div className='card-body'>
      <h5 className='card-tile text-center'>picture1</h5>
      <img src='./image/im1.jpg' class='card-img-top'/>
@@ -173,7 +174,7 @@ const Home = () => {
   <div className='container'>
   <div className='row '>
   <div class="col-4 text-center"><h4 className='pl-5'><a href='' className='text-decoration-none metal_header '>CHOOSE YOUR SELLER PROVINCE</a></h4></div>
-  <div class="col"><hr className='hrs'/></div>
+  <div class="col"><hr/></div>
   </div>
   <div className='row'>
    <div className='col'>
@@ -185,7 +186,7 @@ const Home = () => {
       </li> 
     <li>
       <img src='./image/f2.png' className='image_w image_h'/>
-        <a href='' className='anc'>Eastern</a>
+      <a href='' className='anc'>Eastern</a>
       </li> 
       <li>
       <img src='./image/f3.png' className='image_w image_h'/>
@@ -195,28 +196,25 @@ const Home = () => {
       </li> 
       <li>
       <img src='./image/f5.png' className='image_w image_h'/>
-         <a href='' className='anc'>
-       Northern
-      </a>
-      </li> 
+       <a href='' className='anc'>
+        Northern
+       </a>
+       </li> 
       <li>
-      <img src='./image/f0.png' className='image_w image_h'/>
-         <a href='' className='anc'>
+     <img src='./image/f0.png' className='image_w image_h'/>
+      <a href='' className='anc'>
         Kigali
       </a>
-      </li> 
-      </ul>
-
+    </li> 
+    </ul>
     </div>
    </div>
  </div>
-
   </div>
   </div>
 </div>
 </section>
 </div>
-
 )
 }
 

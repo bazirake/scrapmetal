@@ -1,19 +1,22 @@
 import React from 'react';
 import { setTile } from '../Utilities/Titles';
+import { useParams } from 'react-router-dom';
 import './About.css';
 const About = () => {
+ const {title}=useParams();
   setTile("ScrapMetalSystem | About")
   return (
     <div class='container-fluid'>
       <section id='about'>
+       
         <div className='about-1'>
         <ul className=' breadcrumb breadcrumb-about' >
             <li><a href="/" style={{color: 'white'}}>
             <i><i class="fa fa-home"></i> Home</i></a></li>/
             <li class="active" style={{color: 'white',fontWeight: 'bold'}}>
-           <i><i class="fa fa-info-circle" aria-hidden="true"></i>About</i></li>
+           <i><i class="fa fa-info-circle" aria-hidden="true"></i></i></li>
            </ul>
-        <h1>About us</h1>
+        <h1> {title}</h1>
         <p>Under supervision of the Ministry of
            Environment, from the Law n°63/2013 of 27/08/2013 determining the mission, organization and functioning of Rwanda Environment Management Authority (REMA), REMA reserves the legal mandate for national environmental protection, conservation, promotion and overall management, including advisory to the government on
            all matters pertinent to the environment and climate change.

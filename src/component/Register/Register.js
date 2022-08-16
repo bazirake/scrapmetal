@@ -1,8 +1,10 @@
 import React,{useEffect,useState,useRef} from 'react';
 import { setTile } from '../Utilities/Titles';
+import { useParams } from 'react-router-dom';
 import Axios from 'axios';
 import './Register.css';
 const Register=()=>{   
+  const {title}=useParams();
 setTile("ScrapMetalSystem | Register")
 const phoneRef =useRef(null);
 const cpasswordRef=useRef(null);
@@ -131,7 +133,12 @@ const[userData,setUserData]=useState({
 
   return(
     <div className='container'>
- 
+     <ul className=' breadcrumb breadcrumb-register' >
+         <li><a href="/" style={{color:'white'}}>
+         <i><i class="fa fa-home"></i>Home</i></a></li>
+         <li class="active" style={{color: 'white',fontWeight: 'bold'}}>
+         <i><i class="fa fa-question-circle-o" aria-hidden="true"></i>Register</i></li>
+      </ul>
     <div className='row'>
      <div className='col-lg-10 col-md-10 col-sm-12 col-xs-12 mx-auto my-3'>
        <div className='panel panel-default'>

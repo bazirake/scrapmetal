@@ -14,14 +14,14 @@ const Metal = () => {
              <div className='slider-pro'>
                <div class="big-img" >
                 <img src='./image/im1.jpg' />
-                   </div>
-                   </div>
-            </div>
+              </div>
+           </div>
+          </div>
            <div className='col-md-7 col-sm-6 col-xs-12 '>
             <ul className=' breadcrumb breadcrumbs' >
-            <li><a href="/" style={{color: 'white'}}>
-            <i><i class="fa fa-home"></i> Home</i></a></li>/
-            <li class="active" style={{color: 'white',fontWeight: 'bold'}}>
+            <li><a href="/" style={{color:'white'}}>
+            <i><i class="fa fa-home"></i> Home</i></a></li>
+            <li class="active" style={{color:'white',fontWeight:'bold'}}>
            <i><i class="fa fa-circle-o"></i> Details</i></li>
            </ul>
                  <div className='panel panel panel-default'>

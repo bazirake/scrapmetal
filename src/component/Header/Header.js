@@ -20,7 +20,6 @@ const Header = () =>{
   </Row>
   < Row>
   <Navbar className='nav-bar' expand="lg">
-  
      <Navbar.Toggle aria-controls="navbarScroll" />
        <Navbar.Collapse id="navbarScroll">
         <Nav
@@ -52,7 +51,7 @@ const Header = () =>{
               </NavDropdown.Item>
               <NavDropdown.Divider/>
             </NavDropdown> 
-              <Nav.Link href="/help">Help<span><FontAwesomeIcon icon={faQuestion} /></span></Nav.Link>
+           <Nav.Link href="/help">Help<span><FontAwesomeIcon icon={faQuestion} /></span></Nav.Link>
             <Nav.Link href="/login"><span><FontAwesomeIcon icon={faSignIn} /></span>SignIn</Nav.Link>
             <Nav.Link href="/register"><span><FontAwesomeIcon icon={faPen} /></span>Register</Nav.Link>
             <Nav.Link href="/order"><span><FontAwesomeIcon icon={faCar}/></span>Orders</Nav.Link>

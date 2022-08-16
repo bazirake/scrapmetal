@@ -15,12 +15,12 @@ return(
    <div className='col-md-3'>
        <h2>Customer service</h2>
     <ul className='list-unstyled footer-link'>
-     <li> <a href='#'>Help</a> </li>
-     <li> <a href='#'>Contact us</a> </li>
-     <li> <a href='#'>Delivery Information</a></li>
-     <li> <a href='#'>Privacy &amp; Policy</a> </li>
-     <li> <a href='#'>Advertisement</a> </li>
-     <li> <a href='#'>Blog articles</a></li>
+     <li> <a href='/help'>Help</a> </li>
+     <li> <a href='/help'>Contact us</a> </li>
+     <li> <a href='/help'>Delivery Information</a></li>
+     <li> <a href='/help'>Privacy &amp; Policy</a> </li>
+     <li> <a href='/help'>Advertisement</a> </li>
+     <li> <a href='/help'>Blog articles</a></li>
     </ul>
    </div>
 

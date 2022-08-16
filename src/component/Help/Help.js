@@ -1,15 +1,17 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useParams } from 'react-router-dom';
 import { setTile } from '../Utilities/Titles';
 import './Help.css';
 import { faArrowRight,faBaseball} from '@fortawesome/free-solid-svg-icons';
 const Help = () => {
+  const {title}=useParams();
   setTile("ScrapMetalSystem | Contact us")
   return (
     <div class='container-fluid'>
       <div className='container'>
         <div className='row'>
-         <span className='contact'>Contact us</span>
+         <span className='contact'>{title}</span>
         </div>
         <div className='row'>
          <div className='col-md-6'>
@@ -41,7 +43,7 @@ const Help = () => {
             <li><a href="/" style={{color: 'white'}}>
             <i><i class="fa fa-home"></i> Home</i></a></li>/
             <li class="active" style={{color: 'white',fontWeight: 'bold'}}>
-           <i><i class="fa fa-question-circle-o" aria-hidden="true"></i>Help</i></li>
+           <i><i class="fa fa-question-circle-o" aria-hidden="true"></i>Contact</i></li>
            </ul>
       <div class="my-title">
        <i class="fa fa-envelope"></i>Leave a message</div>
